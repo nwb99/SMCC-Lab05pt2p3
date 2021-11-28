@@ -19,9 +19,13 @@ class romanType
 
         int parse();
         int getNum();
+        bool egg();
+
 
     private:
-       
+
+        // max 3,999 MMMCMXCIX
+        // honestly couldn't think of another way to do this
         const std::vector< std::vector<std::string> > valids = {
         {"MMM", "MM", "M"},                                         // thousands
         {"DCCC", "DCC", "CCC", "DC", "CD", "CM", "CC", "D", "C"},   // hundreds
@@ -37,4 +41,6 @@ class romanType
         }; 
         std::string inlet;
         int number;
+        std::string substr;
+
 };
