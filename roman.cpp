@@ -9,6 +9,10 @@ Asks user to input valid roman numeral sequence and prints conversion
 to a decimal integer represented by (ASCII) Arabic numerals.
 
 clang++ -std=c++17 -o roman roman.cpp romanImp.cpp
+g++ --std==c++17 -o roman roman.cpp romanImp.cpp
+
+requires c++17 because the 'using' declarations are comma separated.
+
 bought to you by vscode with vim emulation
 
 */
